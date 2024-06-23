@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Real Estate Plots</title>
+    <link rel="stylesheet" href="Radha.css">
+    <script src="Radha.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <img src="RadhaLogoBG.png" width="100px" height="70px" alt="Logo" class="logo">
+                <br>RADHA REAL HOME</h1>
+            <nav>
+                <br>
+                <ul>
+                    <li><a href="#home" onclick="toggleContent('home')">Home</a></li>
+                    <li><a href="#about" onclick="toggleContent('about')">About</a></li>
+                    <li><a href="#plots" onclick="toggleContent('plots')">Plots</a></li>
+                    <li><a href="#contact" onclick="toggleContent('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to Your Dream Plot</h2>
+            <p><b>Find the perfect plot for your dream home with us.</b></p>
+            <a href="#" onclick="toggleContent('plots')" style="margin-top: 50pt;" class="btn">View Available Plots</a>
+        </div>
+    </section>
+    
+    <section id="home" style="display: none;">
+        <div class="container">
+            <h2>Welcome to Real Estate Plots</h2>
+            <p>Discover the perfect land and plots for your dream home with us. We specialize in providing prime real estate options for your needs.</p>
+            <p>Whether you're looking for a spacious plot for farming, a serene land for building your dream house, or a commercial property for investment, we have it all.</p>
+            <p>Explore our listings and find your ideal property today!</p>
+        </div>
+    </section>
+
+    <section id="about" style="display: none;">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>This is the about section. Add your content here.</p>
+        </div>
+    </section>
+
+    <section id="plots" style="display: none;">
+        <div class="container">
+            <h2>Available Plots</h2>
+            <div class="plot">
+                <h3>Plot 1</h3>
+                <p>Location: XYZ Area</p>
+                <p>Size: 1000 sq. ft.</p>
+                <p>Price: $50,000</p>
+            </div>
+            <!-- Add more plots as needed -->
+        </div>
+    </section>
+
+    <section id="contact" style="display: none;">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>This is the contact section. Add your contact information here.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Real Estate Plots. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

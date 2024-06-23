@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    padding: 20px;
+    
+}
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    padding: 20px;
+    line-height: 23px;
+font-weight: 500;
+font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+text-align:left;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+-webkit-text-size-adjust: 100%;
+vertical-align: baseline;
+background: transparent;
+transition: none;
+
+}
+header {
+    background-color: #e4d6d6;
+    color: #ebebeb;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #0a0a0a;
+    text-decoration: none;
+}
+#hero {
+    background-image: url('realestate_img.jpeg'); /* Replace 'background.jpg' with your image file path */
+    background-size: cover;
+    background-position: center;
+    color: #070707;
+    text-align: center;
+    padding: 100px 0;
+}
+#home {
+    background-image: url('plotsBG.jpeg'); /* Replace 'background.jpg' with your image file path */
+    background-size: cover;
+    background-position: center;
+    color: #070707;
+    text-align: center;
+    padding: 100px 0;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+#home h2{
+    font-family: 'Cambria, Cochin';
+}
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+    font-family: cursive;
+    
+}
+
+#hero p {
+    font-size: 20px;
+    color: #221c1c;
+    margin-bottom: 10px;
+    font-family: serif;
+}
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+#plots {
+    padding: 50px 0;
+}
+
+.plot {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    display: table;
+}
+/* Style for the form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style for form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 400px;
+    /*perspective: 1000px;*/
+    margin: 30px;
+    float: left;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Styling for flip card content */
+.flip-card-content {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Styling for flip card titles */
+.flip-card-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Styling for flip card description */
+.flip-card-description {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+
+
