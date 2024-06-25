@@ -6,9 +6,10 @@
 
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-.container {
+.container, .container1 {
     width: 80%;
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
@@ -16,20 +17,10 @@ body {
 }
 
 .container1 {
-    width: 80%;
-    margin: 0 auto;
-    -webkit-font-smoothing: antialiased;
-    padding: 20px;
-    line-height: 23px;
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    line-height: 1.6;
     font-weight: 500;
-    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
-    text-align:left;
-    box-sizing: border-box;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    -webkit-text-size-adjust: 100%;
-    vertical-align: baseline;
+    text-align: left;
     background: transparent;
     transition: none;
 }
@@ -49,10 +40,11 @@ header h1 {
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
 
@@ -61,8 +53,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-#hero {
-    background-image: url('realestate_img.jpeg');
+#hero, #home {
     background-size: cover;
     background-position: center;
     color: #070707;
@@ -70,9 +61,19 @@ nav ul li a {
     padding: 100px 0;
 }
 
-#hero h2 {
+#hero {
+    background-image: url('realestate_img.jpeg');
+}
+
+#home {
+    background-image: url('plotsBG.jpeg');
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+#hero h2, #home h2 {
+    margin: 0;
     font-size: 36px;
-    margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: cursive;
 }
@@ -119,6 +120,7 @@ footer {
     display: table;
 }
 
+/* Form Styles */
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -190,31 +192,18 @@ label {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .container, .container1 {
         width: 90%;
-        padding: 10px;
+        padding: 15px;
     }
 
     header h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
-    nav ul {
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    #hero {
-        padding: 50px 0;
-    }
-
-    #hero h2 {
-        font-size: 28px;
+    #hero h2, #home h2 {
+        font-size: 32px;
     }
 
     #hero p {
@@ -223,7 +212,43 @@ label {
 
     .btn {
         padding: 8px 16px;
+    }
+
+    .flip-card {
+        width: 45%;
+        margin: 15px;
+    }
+
+    .flip-card-inner {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container, .container1 {
+        width: 95%;
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero, #home {
+        padding: 50px 0;
+    }
+
+    #hero h2, #home h2 {
+        font-size: 28px;
+    }
+
+    #hero p {
         font-size: 16px;
+    }
+
+    .btn {
+        padding: 6px 12px;
     }
 
     .flip-card {
@@ -246,21 +271,20 @@ label {
         font-size: 18px;
     }
 
-    #hero {
+    #hero, #home {
         padding: 30px 0;
     }
 
-    #hero h2 {
+    #hero h2, #home h2 {
         font-size: 24px;
     }
 
     #hero p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .btn {
-        padding: 6px 12px;
-        font-size: 14px;
+        padding: 4px 8px;
     }
 
     .flip-card {
